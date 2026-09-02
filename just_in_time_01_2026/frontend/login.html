@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Just in Time - Login</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-page">
+  <main class="login-card">
+    <div class="brand">
+      <span class="brand-mark">JIT</span>
+      <div>
+        <h1>Just in Time</h1>
+        <p>Gestão da Produção</p>
+      </div>
+    </div>
+
+    <form id="loginForm">
+      <label for="email">E-mail</label>
+      <input id="email" type="email" placeholder="seu@email.com" required>
+
+      <label for="senha">Senha</label>
+      <input id="senha" type="password" placeholder="Digite sua senha" required>
+
+      <button type="submit" class="btn primary">Entrar</button>
+      <p id="loginMessage" class="message"></p>
+    </form>
+  </main>
+  <script src="js/login.js"></script>
+</body>
+</html>

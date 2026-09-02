@@ -1,0 +1,31 @@
+erDiagram
+    USUARIO ||--o{ PRODUCAO : realiza
+    PRODUTO ||--o{ PRODUCAO : movimenta
+
+    USUARIO {
+        INT id PK
+        VARCHAR nome
+        VARCHAR email UK
+        VARCHAR senha
+        DATETIME criado_em
+    }
+
+    PRODUTO {
+        INT id PK
+        VARCHAR nome
+        VARCHAR descricao
+        DECIMAL custo
+        INT quantidade_estoque
+        INT estoque_minimo
+        DATETIME criado_em
+    }
+
+    PRODUCAO {
+        INT id PK
+        INT produto_id FK
+        INT usuario_id FK
+        ENUM tipo
+        INT quantidade
+        DATE data_movimentacao
+        DATETIME criado_em
+    }
